@@ -1,0 +1,48 @@
+.stats {
+	background-image: url(../images/bg1.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		padding: 2rem;
+		.statNumbers {
+			font-size: 4.5rem;
+			letter-spacing: .5rem;
+			color: $teal;
+			font-family: $basefont;
+			font-weight: bold;
+			margin: 0;
+		}
+		.statDescription {
+			font-size: 1.5rem;
+			color: #fff;
+			font-weight: 700;
+			margin: 0;
+		}
+	}
+}
+
+.stats {
+	.imageOverlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	.innerWrapper {
+		position: relative;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.stats {
+		ul {
+			flex-wrap: wrap;
+		}
+	}
+}

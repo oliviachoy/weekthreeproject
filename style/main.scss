@@ -1,0 +1,72 @@
+@import "partials/_reset";
+@import "partials/_variables";
+@import "partials/_header";
+@import "partials/_title";
+@import "partials/_about";
+@import "partials/_expertise";
+@import "partials/_shop";
+@import "partials/_button";
+@import "partials/_portfolio";
+@import "partials/_gallery";
+@import "partials/_service";
+@import "partials/_stats";
+@import "partials/_blog";
+@import "partials/_banner";
+@import "partials/_footer";
+
+
+// General Styles
+html {font-size: 62.5%}
+
+.wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.innerWrapper {
+	max-width: 70%;
+	margin: 0 auto;
+	position: relative;
+}
+
+body {font-family: $basefont;}
+
+p {font-family: $cursive;}
+
+h1, h2, h3, h4 { text-transform: uppercase;}
+
+h3 {
+	letter-spacing: .3rem;
+}
+a {text-decoration: none}
+
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+i.fa { 
+	font-size: 2rem;
+	border: .3rem solid $teal;
+   	color: $teal;
+	border-radius: 50%;
+	padding: 1.3rem;
+}
+// Welcome Section Image
+
+.welcome {
+	img {
+		display: block;
+		margin: 3rem auto 0 auto;
+		width: 60%;
+	}
+}
+
+
+@media (max-width: 940px) {
+	.innerWrapper {
+		max-width: 90%;
+	}
+}
+

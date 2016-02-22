@@ -1,0 +1,131 @@
+.about {
+	display: flex;
+	flex-flow: row wrap;
+	.imageHolder {
+		width: 25%;
+		padding: 9rem 0;
+		display: flex;
+		background-size: cover;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		.imageHolderTextRound {
+			width: 10rem;
+			padding: 2.5rem;
+			border-radius: 50%;
+			display: flex;
+			margin: auto;
+			flex-direction: column;
+			background: $tealOpacity;
+			p {
+				color: white;
+				margin: auto;
+				text-transform: uppercase;
+				font-family: $basefont;
+			}
+
+		}
+		.plus {
+			position: relative;
+			bottom: 0;
+			display: none;
+			i {
+				font-size: 1rem;
+			}
+		}
+		.imageHolderOverlay {
+				position: absolute;
+				top: 2rem;
+				bottom: 2rem;
+				left: 2rem;
+				right: 0;
+				opacity: 0;
+				&:hover {
+					opacity: 1;
+				}
+		}
+
+		.imageHolderTextSquare {
+			width: 90%;
+			padding: 2rem 0;
+			justify-content: center;
+			align-items: center;
+			background: $tealOpacity;
+			p {
+				margin: 0 auto;
+				width: 80%;
+				color: white;
+				text-align: center;
+				font-family: $basefont;
+				font-weight: 300;
+				line-height: 3rem;
+
+			}
+			.imageHolderTitle {
+				text-transform: uppercase;
+				font-family: $basefont;
+			}
+		}
+	}
+	
+	.imageHolder1 {
+		background-image: url(../images/activity-4.jpg);
+	}
+
+	.imageHolder2 {
+		background-image: url(../images/activity-3.jpg);
+	}
+
+	.imageHolder3 {
+		background-image: url(../images/activity-2.jpg);
+	}
+
+	.imageHolder4 {
+		background-image: url(../images/activity-1.jpg);
+	}
+}
+
+@media (max-width: 940px) {
+	.about .imageHolder .imageHolderTextSquare {
+		p {
+			line-height: 2rem;
+		}
+		button {
+			font-size: 1.2rem;
+			padding: .5rem;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.imageHolder {
+		flex: 1 0 50%;
+		padding: 5rem 0;
+		.plus {
+			display: block;
+		}
+		.imageHolderTextSquare {
+			padding: 0;
+			.imageHolderTitle{
+				display: block;
+			}
+		}
+		.imageHolderOverlay {
+			display: block;
+		}
+	}
+}
+
+
+@media (max-width: 480px) {
+	.about .imageHolder {
+		flex: 1 0 100%;
+		padding: 7rem 0;
+		.about .imageHolderTextSqaure {
+			button {
+				padding: 0;
+			}
+		}
+	}
+}	

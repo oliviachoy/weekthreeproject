@@ -1,0 +1,43 @@
+.expertiseInfo {
+	ul {
+		display: flex;
+		padding-bottom: 3rem;
+		li {
+			text-align: center;
+			i {
+				&:hover {
+					background-color: $teal;
+					color: #fff;
+				}
+			}
+
+			img {
+				max-width: 100%;
+			}
+			p{
+				font-family: $basefont;
+				font-weight: 300;
+				line-height: 2.5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.expertiseInfo {
+		display: flex;
+		justify-content: center;
+		ul {
+			flex-direction: column;
+			width:70%;
+			li{
+				h3 {
+					font-size: 1.6rem;
+				}
+				p {
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+}

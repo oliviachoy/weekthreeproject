@@ -1,0 +1,18 @@
+.shop {
+	background-image: url(../images/featured-image-1280x600.jpg);
+	background-position: center;
+	color: white;
+	padding-bottom: 2rem;
+	position: relative;
+	.imageOverlay{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.5);
+	}
+	.innerWrapper {
+			position: relative;
+	}
+}

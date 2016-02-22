@@ -1,0 +1,72 @@
+.gallery {
+	padding-top: 5rem;
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		li{
+			width: 20%;
+			position: relative;
+			transition: all 2s;
+			img{
+				max-width: 100%;
+				display: block;
+			}
+			.overlay{
+				position: absolute;
+				background: $tealOpacity;
+				top: 1.5rem;
+				bottom: 1.5rem;
+				right: 1.5rem;
+				left: 1.5rem;
+				opacity: 0;
+				display: flex;
+				transition: all 1s;
+				&:hover {
+					opacity: 1;
+				}
+				div {
+					flex-direction: column;
+					align-items: center;
+					margin: auto;
+					text-align: center;
+					// width: 40%;
+				}
+				h4 {
+					color: #fff;
+					line-height: 2rem;
+					letter-spacing: .5rem;
+				}
+				p {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 940px) {
+	.portfolio {
+		.gallery ul {
+			justify-content: center;
+			li {
+				width: 40%;
+				margin: 0 1rem 1rem 0;
+			}
+			.overlay {
+				opacity: 1;
+				position: static;
+				width: 100%;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 480px) {
+	.portfolio {
+		.gallery ul li {
+			margin-left: 0;
+			width: 80%;
+		}
+	}
+}

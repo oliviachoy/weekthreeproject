@@ -1,0 +1,63 @@
+.service {
+	padding-bottom: 3rem;
+	.serviceSection {
+		ul {
+			display: flex;
+			flex-flow: row wrap;
+			li{ 
+				display:flex;
+				width: 33.33%;
+				align-items: center;
+				i {
+					margin-right: 2rem;
+					&:hover {
+						background-color: $teal;
+						color: #fff;
+					}
+				}
+				.serviceInfo {
+					p {
+						font-family: $basefont;
+						font-weight: 300;
+						line-height: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@media (max-width: 480px) {
+	.service .serviceSection {
+		display: flex;
+		ul {
+			flex-direction: column;
+			display: flex;
+			li{
+				width: 100%;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.service .serviceSection {
+		display: block;
+		ul {
+			li {
+				margin: auto;
+				width: 80%;
+				text-align: center;
+				.serviceInfo {
+					display: flex;
+					flex-direction: column;
+					padding: 0;
+				}
+			}
+		
+		}
+	}
+}
